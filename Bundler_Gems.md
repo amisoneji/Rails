@@ -40,6 +40,8 @@ BUNDLE_WITHOUT: "test"
 
 2. Most Rails applications contain few gems which are used only for development and testing. Source code of these gems doesn’t need to be loaded on the production environment. With bundler, you can auto require gems from the specific groups.
 
-**You can also provide a pessimistic version using ‘~>’. Bundler will increment the last digit of the specified version to identify the range of versions applicable for installation. For example gem ‘rails‘, ‘~> 4.2.0‘ allows installation of rails gem with version ‘>= 4.2.0‘ and ‘< 4.3.x‘.**
+**You can also provide a pessimistic version using ‘~>’.   
+Bundler will increment the last digit of the specified version to identify the range of versions applicable for installation. 
+For example gem ‘rails‘, ‘~> 4.2.0‘ allows installation of rails gem with version ‘>= 4.2.0‘ and ‘< 4.3.x‘.**
 
 [ARTICLE LINK](https://blog.mallow-tech.com/2019/12/understanding-bundler-gemfile-in-ruby-rails/)
