@@ -114,4 +114,4 @@ Joins with associationEmployee.joins(forms: [:issuer])
 
 ## **When to use :includes or Joins**
 
-[:includes](https://apidock.com/rails/ActiveRecord/QueryMethods/includes) is a method in ActiveRecord used to preload data in order to avoid N + 1 queries. Use :joins when you solely need to filter data based on associated tables and use :includes if you need to reference data in associated tables later on. For example, we’d want to use :includes if we were to load all active employees for forms that are verified and then print each employee’s name and their form name name.
+includes is a method in ActiveRecord used to preload data in order to avoid N + 1 queries. Use :joins when you solely need to filter data based on associated tables and use :includes if you need to reference data in associated tables later on. For example, we’d want to use :includes if we were to load all active employees for forms that are verified and then print each employee’s name and their form.
