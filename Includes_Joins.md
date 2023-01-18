@@ -30,7 +30,8 @@ Rails provides an [ActiveRecord method called :includes](https://apidock.com/rai
 
 Depending on what your query is, :includes will use either the ActiveRecord method :preload or :eager_load.
 
-## **Pre_load with Includes**In most cases :includes will default to use the [method :preload](https://apidock.com/rails/ActiveRecord/QueryMethods/preload) which will fire 2 queries:
+## **Pre_load with Includes**
+In most cases :includes will default to use the [method :preload](https://apidock.com/rails/ActiveRecord/QueryMethods/preload) which will fire 2 queries:
 
 1. Load all records tied to the leading model
 2. Load records associated with the leading model based off the foreign key on the associated model or the leading model
